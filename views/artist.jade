@@ -1,0 +1,52 @@
+extends layout
+
+block content
+    // Wrapper
+    #wrapper
+        input(type="hidden" value="#{artist.id}" id="artistId")
+        // ARTIST Details
+        - var gender = artist.gender
+        if gender == "Female"
+            #femaleHolder
+                #leftFemaleBlank
+                #rightFemaleBlank
+                    h2(id="artworksOf") The artworks of Mrs. #{artist.fc}
+                #femaleArtistInfoHolder
+                    p Born in <b>#{artist.birthYear}</b> Mrs. #{artist.fc} and we have #{artist.totalWorks} pieces of her art on display.
+                
+                    - var movementsLenght = artist.movements.length;
+                    if(movementsLenght > 0)
+                        table
+                            tr
+                                th Movement
+                                th Era
+                            each movement in artist.movements
+                                tr
+                                    td #{movement.name}
+                                    td #{movement.era.name}
+                        
+                #artworkHolder
+        else
+            #maleHolder
+                h2 The artworks of Mr. #{artist.fc}
+                #maleArtistInfoHolder
+                    p Born in <b>#{artist.birthYear}</b> Mr. #{artist.fc} and we have #{artist.totalWorks} pieces of his art on display.
+                
+                    - var movementsLenght = artist.movements.length;
+                    if(movementsLenght > 0)
+                        table
+                            tr
+                                th Movement
+                                th Era
+                            each movement in artist.movements
+                                tr
+                                    td #{movement.name}
+                                    td #{movement.era.name}
+                #artworkHolder
+            
+        // /ARTIST Details
+        
+    .clear    
+
+    // /WRAPPER
+    script(src='/javascripts/singleArtist.js')

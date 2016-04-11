@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    // Wrapper
+    #wrapper
+        
+        #artworkList
+            each artwork in artworklist
+                .artworkHolder
+                    .artworkHeader
+                        h2
+                            a(href='/artworks/#{artwork._id}') #{artwork.title}
+                    - var image = artwork.thumbnailUrl
+                    if image == null
+                        img(src= "./images/notfound.jpg" class="artworkImage")
+                    else
+                        img(src= "#{artwork.thumbnailUrl}" class="artworkImage")
+        
+        button(class="loadButton",id="10",onclick='loadMoreArtworks(this.id)') Load More
+
+    // /WRAPPER
+    script(src='/javascripts/artworklist.js')
+    
+    

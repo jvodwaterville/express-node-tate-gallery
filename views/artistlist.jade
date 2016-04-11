@@ -1,0 +1,33 @@
+extends layout
+
+block content
+    // Wrapper
+    #wrapper
+        
+        #searchBoxHolder
+            h2 Search Artists
+            <br>
+            input(type="text" name="searchName" placeholder="Search Artists" id="searchName" onkeyup="searchArtists()")
+        
+        // ARTIST LIST
+        #artistList
+            each artist in artistlist
+                .artistHolder
+                    .nameHolder
+                        h2
+                            a(href='/artists/#{artist._id}') #{artist.mda}
+                    .fullLenght
+                        p Gender: #{artist.gender}
+                    .fullLenght
+                        p Birth Year: #{artist.birthYear}
+                    .fullLenght
+                        p Total Works: #{artist.totalWorks}
+        // /ARTIST LIST
+        
+       
+        
+        button(class="loadButton",id="10",onclick='loadMoreArtists(this.id)') Load More
+        .clear
+
+    // /WRAPPER
+    script(src='/javascripts/artistlist.js')

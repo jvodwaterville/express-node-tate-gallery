@@ -1,0 +1,471 @@
+body 
+{
+  padding: 30px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#wrapper 
+{
+    margin-top: 85px;
+}
+
+.clear
+{
+    clear: both;
+}
+
+/*
+* === Home Page ===
+*/
+.topLine
+{
+    width: 100%;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.halfWidth
+{
+    width: 50%;
+    float: left;
+    min-height: 400px;
+    text-align: center;
+}
+
+.homeImage
+{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.homeInfoHolder
+{
+    width: 70%;
+    line-height: 25px;
+    margin: auto;
+    margin-top: 60px;
+    margin-left: 15%;
+    display: block;
+}
+
+/*
+* === Artist List Page ===
+*/
+#searchBoxHolder
+{
+    width: 100%;
+    text-align: center;
+    float: left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#artistList
+{
+    width: 100%;
+    min-height: 500px;
+    text-align: center;
+    float: left;
+}
+
+.artistHolder
+{
+    width: 30%;
+    display: inline-block;
+    margin: 1%;
+    margin-top: 10px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    border-radius:15px;
+    border: 1px solid #000000;
+    -webkit-box-shadow:0px 1px 17px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 17px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 17px 0px rgba(0,0,0,0.75);
+}
+
+.nameHolder
+{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #000000;
+    -webkit-border-top-right-radius:15px;
+    -moz-border-top-right-radius:15px;
+    border-top-right-radius:15px;
+    -webkit-border-top-lef-radius:15px;
+    -moz-border-top-left-radius:15px;
+    border-top-left-radius:15px;
+    overflow: hidden;
+}
+
+.nameHolder *
+{
+    display: inline-block;
+}
+
+.fullLenght
+{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    color: #000000;
+}
+
+.artistHolder table
+{
+    width: 60%;
+    margin: auto;
+    margin-top:10px;
+    margin-bottom:10px; 
+    text-align: center;
+    border: 1px solid #000000;
+    -webkit-box-shadow:0px 1px 17px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 17px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 17px 0px rgba(0,0,0,0.75);
+}
+
+.artistHolder table th
+{
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #000000;
+}
+
+.artistHolder table td
+{
+    background-color: #FFFFFF;
+    color: #000000;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #000000;
+}
+
+.loadButton
+{
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    width: 33%;
+    background: #FFFFFF;
+    color:#000000;
+    display: inline-block;
+    cursor:pointer;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    border:2px solid #000000;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 33%;
+}
+
+.loadButton:hover
+{
+    background: #000000;
+    color:#FFFFFF;
+}
+
+a
+{
+    color: inherit;
+}
+
+/*
+* === Artwork List Page ===
+*/
+.artworkImage
+{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+}
+
+#artworkList
+{
+    width: 100%;
+    text-align: center;
+}
+
+.artworkHolder
+{
+    display: inline-block;
+    height: 280px;
+    width: 250px;
+    margin: 10px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    border-radius:15px;
+    border: 1px solid #000000;
+    -webkit-box-shadow:0px 1px 17px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 17px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 17px 0px rgba(0,0,0,0.75);
+    overflow: hidden
+}
+
+.artworkHeader
+{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #000000;
+    -webkit-border-top-right-radius:15px;
+    -moz-border-top-right-radius:15px;
+    border-top-right-radius:15px;
+    -webkit-border-top-lef-radius:15px;
+    -moz-border-top-left-radius:15px;
+    border-top-left-radius:15px;
+    overflow: hidden;
+}
+
+.imageHolder
+{
+    width: 34%;
+    height: 100%;
+    float: left;
+}
+
+.infoHolder
+{
+    width: 66%;
+    height: 100%;
+    float: left;
+}
+
+.infoHolder h3
+{
+    display: inline-block
+}
+.infoHolder p
+{
+    display: inline-block
+}
+
+/*
+* === Single Artwork Page ===
+*/
+#bigImage
+{
+    width:100%;
+    height: 320px;
+    text-align: center;
+}
+#sArtworkImage
+{
+    display: block;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+}
+.thirdWidth
+{
+    min-height: 200px;
+    width: 33%;
+    float: left;
+    margin-top: 20px;
+}
+
+
+/*
+* === Single Artist Page ===
+*/
+
+#artworkHolder
+{
+    text-align: center;
+    padding-top: 10px;
+    min-height: 450px;
+}
+#artworksOf
+{
+    padding-top: 20px;
+}
+#femaleHolder
+{
+    text-align: center;
+    color: #ff0080;
+}
+#femaleHolder #artworkHolder
+{
+    width: 70%;
+    float: left;
+}
+#femaleHolder .artworkHolder
+{
+    border: 1px solid #ff0080;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#femaleHolder .artworkHeader
+{
+    color: #FFFFFF;
+    background-color: #ff0080;
+}
+#femaleArtistInfoHolder
+{
+    width: 30%;
+    min-height:50px;
+    padding-top: 10px;
+    float: left;
+}
+
+#femaleHolder table
+{
+    width: 95%;
+    margin: auto;
+    margin-top:10px;
+    margin-bottom:10px; 
+    text-align: center;
+    border: 1px solid #ff0080;
+    -webkit-box-shadow:0px 1px 17px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 17px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 17px 0px rgba(0,0,0,0.75);
+}
+
+#femaleHolder table th
+{
+    background-color: #ff0080;
+    color: #FFFFFF;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #ff0080;
+}
+
+#femaleHolder table td
+{
+    background-color: #FFFFFF;
+    color: #ff0080;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #ff0080;
+}
+#leftFemaleBlank
+{
+    width: 30%;
+    height: 40px;
+    float: left;
+}
+#rightFemaleBlank
+{
+    width: 70%;
+    height: 40px;
+    float: left;
+    text-align: center;
+}
+#maleHolder
+{
+    text-align: center;
+    color: #666666;
+}
+#maleHolder .artworkHolder
+{
+    border: 1px solid #666666;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#maleHolder .artworkHeader
+{
+    color: #FFFFFF;
+    background-color: #666666;
+}
+
+#maleHolder table
+{
+    width: 60%;
+    margin: auto;
+    margin-top:10px;
+    margin-bottom:10px; 
+    text-align: center;
+    border: 1px solid #666666;
+    -webkit-box-shadow:0px 1px 17px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 17px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 17px 0px rgba(0,0,0,0.75);
+}
+
+#maleHolder table th
+{
+    background-color: #666666;
+    color: #FFFFFF;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #666666;
+}
+
+#maleHolder table td
+{
+    background-color: #FFFFFF;
+    color: #666666;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #666666;
+}
+#maleArtistInfoHolder
+{
+    width: 100%;
+    min-height:50px;
+    padding-top: 10px;
+}
+
+.a1800s
+{
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/80s.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.a1800s h2
+{
+    background-color: #FFFFFF;
+}
+.a1900s
+{
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/90s.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.a1900s h2
+{
+    background-color: #FFFFFF;
+}
+.a2000s
+{
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/00s.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.a2000s h2
+{
+    background-color: #FFFFFF;
+}
+any00s
+{
+    width: 100%;
+    height: 300px;
+    background-color: #FFFFFF;
+}
+.singleArtworkImage
+{
+    width: 250px;
+    height: 250px;
+    margin-top: 10px;
+    display: inline-block;
+}

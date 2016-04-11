@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    // Wrapper
+    #wrapper
+        .topLine
+            h1 Welcome to the Tate Gallery
+    
+        .halfWidth
+            .homeInfoHolder
+                p Tate Modern is a modern art gallery located in London. It is Britain's national gallery of international modern art and forms part of the Tate group (together with Tate Britain, Tate Liverpool, Tate St Ives and Tate Online).[3] It is based in the former Bankside Power Station, in the Bankside area of the London Borough of Southwark. Tate holds the national collection of British art from 1900 to the present day and international modern and contemporary art.[4] It is one of the largest museum of modern and contemporary art in the world.
+                
+        .halfWidth
+            - var title = artwork.title
+            if title != "[title not known]"
+                h2 #{artwork.title}
+            
+            - var image = artwork.thumbnailUrl
+            if image == null
+                img(src= "../images/notfound.jpg" class="artworkImage")
+            else
+                img(src= "#{artwork.thumbnailUrl}" class="artworkImage")
+            p By #{artwork.all_artists}
+
+        .clear
+    // /WRAPPER

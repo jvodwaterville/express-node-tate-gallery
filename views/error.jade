@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    // Wrapper
+    #wrapper
+        
+        h1= message
+        h2= error.status
+        pre #{error.stack}lass="loadButton",id="10",onclick='loadMore(this.id)') Load More
+
+    // /WRAPPER

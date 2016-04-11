@@ -1,0 +1,73 @@
+extends layout
+
+block content
+    // Wrapper
+    #wrapper
+        
+        // ARTWORK Details
+        - var year = artwork.acquisitionYear
+        if year > 1799 && year < 1900
+            .a1800s
+                #bigImage
+                    h2 #{artwork.title}
+                    - var image = artwork.thumbnailUrl
+                    if image == null
+                        img(src= "../images/notfound.jpg" class="singleArtworkImage")
+                    else
+                        img(src= "#{artwork.thumbnailUrl}" class="singleArtworkImage")
+        else if year > 1899 && year < 2000
+            .a1900s
+                #bigImage
+                    h2 #{artwork.title}
+                    - var image = artwork.thumbnailUrl
+                    if image == null
+                        img(src= "../images/notfound.jpg" class="singleArtworkImage")
+                    else
+                        img(src= "#{artwork.thumbnailUrl}" class="singleArtworkImage")
+        else if year > 1999
+            .a2000s
+                #bigImage
+                    h2 #{artwork.title}
+                    - var image = artwork.thumbnailUrl
+                    if image == null
+                        img(src= "../images/notfound.jpg" class="singleArtworkImage")
+                    else
+                        img(src= "#{artwork.thumbnailUrl}" class="singleArtworkImage")
+        else
+            .any00s
+                #bigImage
+                    h2 #{artwork.title}
+                    - var image = artwork.thumbnailUrl
+                    if image == null
+                        img(src= "../images/notfound.jpg" class="singleArtworkImage")
+                    else
+                        img(src= "#{artwork.thumbnailUrl}" class="singleArtworkImage")
+        
+        .thirdWidth
+            .fullLenght
+                h3 Credit:
+                p #{artwork.creditLine}
+            .fullLenght
+                h3 All Artists:
+                p #{artwork.all_artists}
+                
+        .thirdWidth
+            .fullLenght
+                h3 Classification:
+                p #{artwork.classification}
+            .fullLenght
+                h3 Medium:
+                p #{artwork.medium}
+                
+        .thirdWidth
+            .fullLenght
+                h3 Copyright:
+                p #{artwork.thumbnailCopyright}
+            .fullLenght
+                h3 Acquisition Year:
+                p #{artwork.acquisitionYear}
+        
+        .clear
+        // /ARTWORK Details
+
+    // /WRAPPER
