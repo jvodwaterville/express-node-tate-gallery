@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 // Database
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('localhost:27017/assesstment');
+var db = monk(' mongodb://user2:password@ds028679.mlab.com:28679/db1');
 
 var routes = require('./routes/index');
 var artists = require('./routes/artists');
